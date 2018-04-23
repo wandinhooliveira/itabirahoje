@@ -25,7 +25,7 @@ SECRET_KEY = '9=0vrp%y#!(&---x%fnv##r6m^btyu6!_w%_im%_c#s7@=+%4i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'wandinho.pythonanywhere.com']
 
 
 # Application definition
