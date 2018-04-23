@@ -1,0 +1,59 @@
+
+
+#corpo{
+	margin-left: 5%;
+	width: 90%;
+	height: 700px;
+}
+h1{
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-size: 3.5rem;
+	margin-top: 20px;
+}
+h2{
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 10px;
+	color: grey;
+}
+h6{
+    font-family: 'Arial', sans-serif;
+	text-align: left;
+	font-size: 1.5rem;
+	margin-top: 10px;
+	font-weight: lighter;
+}
+.propaganda{
+	width: 100%;
+	height: 200px;
+	margin-top: 50px;
+	color: grey;
+}
+#propaganda1{
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	border: 1px solid;
+}
+.imagem-noticia img{
+	width: 80%;
+}
+.texto{
+    margin-top: 20px;
+    width: 60%;
+    font-weight: lighter;
+}
+
+#centralizador{
+    align:center;
+}
+
+@media (max-width: 1400px){html{font-size: 80%;}img{height: 500px}}
+@media (max-width: 960px){html{font-size: 80%;}img{height: 400px}}
+@media (max-width: 768px){html{font-size: 70%;}img{height: 300px}}
+@media (max-width: 480px){html{font-size: 60%;}img{height: 200px}}
+@media (max-width: 320px){html{font-size: 40%;}img{height: 100px}}	
+
+

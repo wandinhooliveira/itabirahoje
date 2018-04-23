@@ -1,0 +1,74 @@
+
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load core_extras %}
+{% block content %}
+<script language="javascript" xmlns="http://www.w3.org/1999/html">
+    function autoResize()
+    {
+        objTextArea = document.getElementById('txtTextArea');
+        while (objTextArea.scrollHeight > objTextArea.offsetHeight)
+        {
+            objTextArea.rows += 1;
+        }
+    }
+        </script>
+
+
+        <link rel="stylesheet"  href="{% static 'css/noticia.css' %}">
+    {% for noticia in noticia_mostrar %}
+    <div id="corpo">
+			<h1>
+				{{noticia.titulo}}
+			</h1>
+			<h2>
+                {{noticia.subtitulo}}
+			</h2>
+			<div class="propaganda">
+				<div id="propaganda1">Propaganda</div>
+			</div>
+			<center><div class="imagem-noticia">
+				{% if noticia.foto1 %}
+                <img src="{{url_img}}{{noticia.foto1}}">
+                {% endif %}
+			</div>
+            <div class="texto">
+                <h6>{{noticia.paragrafo1|linebreaksbr }}</h6>
+            </div>
+            <div class="imagem-noticia">
+                {% if noticia.foto2 %}
+                <img src="{{url_img}}{{noticia.foto2}}">
+                {% endif %}
+            </div>
+            <div class="texto">
+                <h6>{{noticia.paragrafo2|linebreaksbr }}</h6>
+            </div>
+            <div class="propaganda">
+		        <div id="propaganda1">Propaganda</div>
+	        </div></center>
+
+        {% for noticia in ultimas_noticias %}
+            <div class="lista-noticias" style="align:center;margin-left:5%">
+                <div class="noticia-lista">
+                    <div class="direita-lista" {% if noticia.foto1 %} style="height:90%;float: right;width: 55%;" {% endif %}>
+                        <div class="categoria-lista"><a href="/{{noticia.categoria}}"><h3>{{noticia.categoria}}</h3></a></div>
+                        <div class="titulo-lista"><a href="/noticias/{{noticia.slug}}"><h4>{{noticia.titulo}}</h4></a></div>
+                        <div class="sub-lista"><a href="/noticias/{{noticia.slug}}"><h5>{{noticia.subtitulo}}</h5></a></div>
+                    </div>
+                    {%if noticia.foto1 %}
+                    <div class="imagem-noticia-lista">
+                        <img src="{{url_img}}{{noticia.foto1}}">
+                    </div>
+                    {% endif %}
+                </div>
+
+            </div>
+	         {% endfor %}
+
+
+    </div>
+
+
+    {% endfor %}
+
+{% endblock %}

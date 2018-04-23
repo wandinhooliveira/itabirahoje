@@ -1,0 +1,53 @@
+{% load staticfiles %}
+
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Itabira Hoje</title>
+<link rel="shortcut icon" href="http://www.liderancacomvoce.com.br/statics/images/icones/favicon.ico" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<link rel="stylesheet"  href="{% static 'css/menu.css' %}">
+<link rel="stylesheet"  href="{% static 'css/corpo.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
+</head>
+
+<body>
+
+<div class="barra">
+    <div id="dir"><form style="margin-top:15px;" action="/busca" method="get">
+                    <input type="text" name="busca" id="busca" />
+                    <button style="background-color:#000000;border:none;color: #FFFFFF;font-family: 'Roboto', sans-serif;"
+                            type="submit">Buscar</button>
+                </form>
+    </div>
+  <div id="esq">
+		<div class="menu">
+  <ul class="menu-list">
+
+    <li>
+      <a>Menu</a>
+       <ul class="sub-menu">
+        <li><a href="/ultimas">Ultimas</a></li>
+        <li><a href="/policia">Polícia</a></li>
+        <li><a href="/politica">Política</a></li>
+        <li><a href="/esporte">Esporte</a></li>
+        <li><a href="/emprego">Emprego</a></li>
+        <li><a href="/mundo">Mundo</a></li>
+        <li><a href="/brasil">Brasil</a></li>
+        <li><a href="/itabira">Itabira</a></li>
+
+
+      </ul>
+    </li>
+
+  </ul>
+     </div>
+  </div>
+  <div id="logo"><a href="/">ih</a></div>
+</div>
+	{% block content %}
+	{% endblock %}
+
+</body>
+</html>

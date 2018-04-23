@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+        {% block content %}
+        <div class="propaganda">
+				<div id="propaganda1">Propaganda</div>
+        </div>
+
+        {% for noticia in lista_noticias %}
+            <div class="lista-noticias" style="align:center;margin-left:5%; margin-top:20px;">
+                <div class="noticia-lista">
+                    <div class="direita-lista" {% if noticia.foto1 %} style="height:90%;float: right;width: 55%;" {% endif %}>
+                        <div class="categoria-lista"><a href="/{{noticia.categoria}}"><h3>{{noticia.categoria}}</h3></a></div>
+                        <div class="titulo-lista"><a href="/noticias/{{noticia.slug}}"><h4>{{noticia.titulo}}</h4></a></div>
+                        <div class="sub-lista"><a href="/noticias/{{noticia.slug}}"><h5>{{noticia.subtitulo}}</h5></a></div>
+                    </div>
+                    {%if noticia.foto1 %}
+                    <div class="imagem-noticia-lista">
+                        <img src="{{url_img}}{{noticia.foto1}}">
+                    </div>
+                    {% endif %}
+                </div>
+
+            </div>
+	         {% endfor %}
+        {% endblock %}

@@ -1,0 +1,219 @@
+@media (max-width: 1400px){html{font-size: 80%;}}
+@media (max-width: 960px){html{font-size: 80%;}}
+@media (max-width: 768px){html{font-size: 70%;}}
+@media (max-width: 480px){html{font-size: 60%;}}
+@media (max-width: 320px){html{font-size: 40%;}}	
+
+
+
+
+
+
+#corpo{
+	width: 88%;
+	margin: auto;
+	margin-top: 30px;
+}
+#p-dir{
+	width: 49.5%;
+	height: 550px;
+	float: right;
+}
+
+
+
+.principal{
+	margin-bottom: 20px;
+}
+.lista-noticias{
+	width: 65%;	
+}
+#propaganda2{
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	border: 1px solid;
+}
+@media (max-width: 1100px) 
+{
+  .principal{
+    display: none;
+  }
+  .coluna-direita{
+	display:none;  
+  }
+  .lista-noticias{
+	width:100%;  
+  }
+  
+}
+#p-esq{
+	
+	width: 49.5%;	
+	border-color: black;
+	border:2px solid;
+	height:550px;
+}
+#p-dir-up{
+	width:100%;
+	height: 49%;
+	background-size: 100% 100%;
+
+	
+}
+#p-dir-down{
+	width:100%;
+	height: 49%;
+	background-size: 100% 100%;
+	margin-top: 10px;
+ 
+}
+.coluna-direita{
+	float: right;
+	width: 29%;
+	height: 400px;
+}
+.propaganda-lateral{
+	width: 100%;
+	height: 300px;
+	border: 1px solid;
+	margin-bottom: 10px;
+	color: gray;
+	
+}
+
+.noticia-lista{
+	width: 100%;
+	height: 230px;
+	border-bottom: 1px solid;
+	margin-bottom: 25px;
+	}
+.imagem-noticia-lista{
+
+	width: 40%;
+	height:90%;	
+}
+.imagem-noticia-lista img{
+	
+	width: 100%;
+	height:100%;	
+}
+
+#p-esq-interno{
+	margin-top: 4%;
+	margin-left: 5%;
+	height: 95%;
+	width: 90%;
+}
+#categoria-principal{
+	width: 100%;
+	height: 31%;
+
+}
+#titulo-principal{
+	width: 100%;
+	height: 37%;
+	margin-bottom: 0.5%;
+	margin-top: 0.5%;
+}
+#sub-pricipal{
+	width: 100%;
+	height: 31%;
+	
+}
+h1{
+	font-family: 'Roboto', sans-serif;
+	font-size: 3rem;
+	line-height: 100%;
+	font-weight: 700;
+	color: #8A0808;
+}
+h2{
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5rem;
+	color: black;
+}
+h3{
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5rem;
+}
+h4{
+	font-family: 'Roboto', sans-serif;
+	font-size: 2rem;
+	line-height: 100%;
+	font-weight: 700;
+	color: black;
+	text-align: inherit;
+}
+h5{
+	text-decoration: none;
+	color: black;
+	font-size: 1rem;
+}
+a{
+	text-decoration: none;
+}
+#p-dir a{
+	margin-left: 10px;
+	
+}
+.categoria-dir{
+	height: 50%;
+	width: 95%;
+	margin-left: 5%;
+
+}
+.categoria-dir h2{
+	color: white;
+	background: rgba(0, 0, 0, 0.4);
+	margin-top:20px;
+}
+.titulo-dir{
+	height: 50%;
+	width: 90%;
+	margin-left: 5%;
+	position:relative;
+
+}
+.titulo-dir h4{
+	background: rgba(0, 0, 0, 0.4);
+	color: white;
+    position: absolute; bottom: 10;
+}
+
+.propaganda{
+	width: 100%;
+	height: 200px;
+	margin-top: 50px;
+	color: grey;
+}
+#propaganda1{
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	border: 1px solid;
+}
+
+
+#previsao{
+	margin-left: 12%;
+}
+
+.categoria-lista{
+	height: 15%;
+}
+.titulo-lista{
+	height: 60%;
+	
+
+}
+.titulo-lista h4{
+	color: #8A0808;	
+}
+.sub-lista h5	{
+	color: grey;
+}
+
+

@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% block content %}
+<div id="corpo">
+	<div class="propaganda">
+		<div id="propaganda2">Propaganda</div>	
+	</div>
+	<div class="principal">
+		<div id="p-dir">
+			{% for noticia in noticia_capa3 %}
+			<div id="p-dir-up" style="background-image:url({{url_img}}{{noticia.foto1}})">
+				<div class="categoria-dir" >
+					<a href="/{% filter lower %}{{noticia.categoria}}{% endfilter %}"><h2>{{noticia.categoria}}</h2></a>
+				</div>
+				<div class="titulo-dir">
+					<a href="/noticias/{{noticia.slug}}"><h4>{{noticia.titulo}}</h4></a>
+				</div>
+			</div>
+			{% endfor %}
+			{% for noticia in noticia_capa2 %}
+			<div id="p-dir-down" style="background-image:url({{url_img}}{{noticia.foto1}})">
+					<div class="categoria-dir">
+						<a href="/{% filter lower %}{{noticia.categoria}}{% endfilter %}"><h2>{{noticia.categoria}}</h2></a>
+					</div>
+					<div class="titulo-dir">
+						<a href="/noticias/{{noticia.slug}}"><h4>{{noticia.titulo}}</h4></a>
+				
+					</div>
+			</div>
+			{% endfor %}
+		</div>
+		
+		<div id="p-esq">
+			<div id="p-esq-interno">
+				{% for noticia in noticia_capa %}
+					<div id="categoria-principal">
+						<a href="/{% filter lower %}{{noticia.categoria}}{% endfilter %}"><h2>{{noticia.categoria}}</h2></a>
+					</div>
+					<div id="titulo-principal">
+						<a href="/noticias/{{noticia.slug}}"><h1>{{noticia.titulo}}</h1></a>
+					</div>			
+					<div id="sub-pricipal">
+						<a href="/noticias/{{noticia.slug}}"><h3>{{noticia.subtitulo}}</h3></a>
+					</div>
+				{% endfor %}
+			</div>
+		</div>					
+	</div>
+	<div class="propaganda">
+		<div id="propaganda1">Propaganda</div>	
+	</div>
+
+	<div class="coluna-direita">
+		<script src='https://www.concursosnobrasil.com.br/api/widget.js?l=mg' type='text/javascript'></script>
+
+        <div class="propaganda-lateral">
+			Propaganda
+		</div>
+
+        <div id="previsao">
+		<iframe frameborder="0" allowtransparency="yes" float="right" width="300" height="200"
+		src="http://www.tempoagora.com.br/ta-widgets?cidades=Itabira-MG&amp;tipo=horizontal"></iframe>
+		</div>
+		<div class="propaganda-lateral" style="margin-top:10px;">
+			Propaganda
+		</div>
+
+	</div>
+
+		{% for noticia in ultimas_noticias %}
+		<div class="lista-noticias">
+			<div class="noticia-lista">
+				<div class="direita-lista" {% if noticia.foto1 %} style="height:90%;float: right;width: 55%;" {% endif %}>
+					<div class="categoria-lista"><a href="/{{noticia.categoria}}"><h3>{{noticia.categoria}}</h3></a></div>
+					<div class="titulo-lista"><a href="/noticias/{{noticia.slug}}"><h4>{{noticia.titulo}}</h4></a></div>
+					<div class="sub-lista"><a href="/noticias/{{noticia.slug}}"><h5>{{noticia.subtitulo}}</h5></a></div>
+				</div>
+				{%if noticia.foto1 %}
+				<div class="imagem-noticia-lista">
+					<img src="{{url_img}}{{noticia.foto1}}">
+				</div>
+				{% endif %}
+			</div>
+
+		</div>
+
+	{% endfor %}
+</div>
+
+{% endblock %}
