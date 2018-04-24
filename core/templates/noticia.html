@@ -13,7 +13,14 @@
         }
     }
         </script>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
         <link rel="stylesheet"  href="{% static 'css/noticia.css' %}">
     {% for noticia in noticia_mostrar %}
@@ -21,18 +28,23 @@
 			<h1>
 				{{noticia.titulo}}
 			</h1>
+            <center> <div id="publicado" style="margin-bottom:2px;width:100%;">
+                <p>Publicado em {{noticia.data}} por {{noticia.autor}}</p>
+             </div></center>
 			<h2>
                 {{noticia.subtitulo}}
 			</h2>
 			<div class="propaganda">
 				<div id="propaganda1">Propaganda</div>
 			</div>
+
 			<center><div class="imagem-noticia">
 				{% if noticia.foto1 %}
                 <img src="{{url_img}}{{noticia.foto1}}">
                 {% endif %}
 			</div>
-            <div class="texto">
+
+                <div class="texto">
                 <h6>{{noticia.paragrafo1|linebreaksbr }}</h6>
             </div>
             <div class="imagem-noticia">
@@ -46,6 +58,8 @@
             <div class="propaganda">
 		        <div id="propaganda1">Propaganda</div>
 	        </div></center>
+        <div class="fb-comments" data-href="http://www.itabirahoje.com.br/noticias{{noticia.slug}}"
+                 data-width="100%" data-numposts="7"></div>
 
         {% for noticia in ultimas_noticias %}
             <div class="lista-noticias" style="align:center;margin-left:5%">
