@@ -3,7 +3,18 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Itabira Hoje</title>
+
+{% if noticia_mostrar%}
+    {% for noticia in noticia_mostrar %}
+    <title>{{noticia.titulo}}</title>
+    {% endfor %}
+{% endif %}
+{% if lista_noticias%}
+    {% for noticia in lista_noticias %}
+    <title>{{noticia.categoria}}</title>
+    {% endfor %}
+{% endif %}
+    <title>Itabira Hoje</title>
 <link rel="shortcut icon" href="http://www.liderancacomvoce.com.br/statics/images/icones/favicon.ico" />
 <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
