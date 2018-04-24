@@ -131,7 +131,7 @@ h1{
 	font-size: 3rem;
 	line-height: 100%;
 	font-weight: 700;
-	color: #8A0808;
+	color: #c4170c;
 }
 h2{
 	text-transform: uppercase;
@@ -218,7 +218,7 @@ a{
 
 }
 .titulo-lista h4{
-	color: #8A0808;	
+	color: #c4170c;
 }
 .sub-lista h5	{
 	color: grey;
