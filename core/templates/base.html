@@ -8,8 +8,7 @@
     {% for noticia in noticia_mostrar %}
     <title>{{noticia.titulo}}</title>
     {% endfor %}
-{% endif %}
-{% if lista_noticias%}
+{% elif lista_noticias%}
     {% for noticia in lista_noticias %}
     <title>{{noticia.categoria}}</title>
     {% endfor %}
