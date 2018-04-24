@@ -5,7 +5,7 @@ from .models import noticia
 # Create your views here.
 url_img = 'http://www.liderancacomvoce.com.br/statics/images/'
 def index(request):
-    ultimas_noticias = noticia.objects.order_by('-data')[:5]
+    ultimas_noticias = noticia.objects.order_by('-data')[:10]
     noticia_capa = noticia.objects.filter(capa=1).order_by('-data')[:1]
     noticia_capa2 = noticia.objects.filter(capa=2).order_by('-data')[:1]
     noticia_capa3 = noticia.objects.filter(capa=3).order_by('-data')[:1]
