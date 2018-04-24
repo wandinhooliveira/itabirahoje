@@ -37,6 +37,11 @@ h6{
 	margin: auto;
 	border: 1px solid;
 }
+.imagem-noticia{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
 .imagem-noticia img{
 	width: 80%;
 }
