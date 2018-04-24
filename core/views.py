@@ -22,7 +22,7 @@ def noticia_show(request, slug):
     for noti in noticia_mostrar:
         categoria = noti.categoria
 
-    ultimas_noticias = noticia.objects.filter(categoria=categoria)[:5]
+    ultimas_noticias = noticia.objects.filter(categoria=categoria)[:8]
 
 
     context = {'noticia_mostrar': noticia_mostrar,
