@@ -22,7 +22,7 @@ def noticia_show(request, slug):
     for noti in noticia_mostrar:
         categoria = noti.categoria
 
-    ultimas_noticias = noticia.objects.filter(categoria=categoria)[:8]
+    ultimas_noticias = noticia.objects.filter(categoria=categoria).order_by('-data')[:8]
 
 
     context = {'noticia_mostrar': noticia_mostrar,
@@ -32,7 +32,7 @@ def noticia_show(request, slug):
     return render(request, 'noticia.html', context)
 
 def categoria_show(request, categoria):
-    lista_noticias = noticia.objects.filter(categoria=categoria.capitalize())
+    lista_noticias = noticia.objects.filter(categoria=categoria.capitalize()).order_by('-data')
     context = {'lista_noticias': lista_noticias,
                'url_img': url_img,}
 
@@ -46,7 +46,7 @@ def ultimas_noticias(request):
 
 def busca_noticias(request):
     busca = request.GET.get('busca')
-    lista_noticias = noticia.objects.filter(titulo__contains=busca)
+    lista_noticias = noticia.objects.filter(titulo__contains=busca).order_by('-data')
 
     context = {'lista_noticias': lista_noticias,
                'url_img': url_img, }
