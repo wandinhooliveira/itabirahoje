@@ -24,7 +24,6 @@ def noticia_show(request, slug):
 
     ultimas_noticias = noticia.objects.filter(categoria=categoria).order_by('-data')[:8]
 
-
     context = {'noticia_mostrar': noticia_mostrar,
                'url_img': url_img,
                'ultimas_noticias': ultimas_noticias}
@@ -35,7 +34,6 @@ def categoria_show(request, categoria):
     lista_noticias = noticia.objects.filter(categoria=categoria.capitalize()).order_by('-data')
     context = {'lista_noticias': lista_noticias,
                'url_img': url_img,}
-
     return render(request, 'categoria.html', context)
 
 def ultimas_noticias(request):
