@@ -20,7 +20,9 @@
 	float: right;
 }
 
-
+#facebook-cel{
+    display: none;
+}
 
 .principal{
 	margin-bottom: 20px;
@@ -34,6 +36,7 @@
 	margin: auto;
 	border: 1px solid;
 }
+
 @media (max-width: 1100px) 
 {
   .principal{
@@ -45,6 +48,10 @@
   .lista-noticias{
 	width:100%;  
   }
+   #facebook-cel{
+       display: block;
+       width:100%;
+    }
   
 }
 #p-esq{
