@@ -22,7 +22,7 @@ def noticia_show(request, slug):
     for noti in noticia_mostrar:
         categoria = noti.categoria
 
-    ultimas_noticias = noticia.objects.filter(categoria=categoria).order_by('-data')[:8]
+        ultimas_noticias = noticia.objects.order_by('-data')[:10]
 
     context = {'noticia_mostrar': noticia_mostrar,
                'url_img': url_img,
