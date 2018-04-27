@@ -18,7 +18,7 @@ def index(request):
 
 def noticia_show(request, slug):
     noticia_mostrar = noticia.objects.filter(slug=slug)[:1]
-    
+
 
     ultimas_noticias = noticia.objects.order_by('-data')[:10]
 
