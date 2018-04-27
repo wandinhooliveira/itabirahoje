@@ -18,11 +18,9 @@ def index(request):
 
 def noticia_show(request, slug):
     noticia_mostrar = noticia.objects.filter(slug=slug)[:1]
-    categoria = ''
-    for noti in noticia_mostrar:
-        categoria = noti.categoria
+    
 
-        ultimas_noticias = noticia.objects.order_by('-data')[:10]
+    ultimas_noticias = noticia.objects.order_by('-data')[:10]
 
     context = {'noticia_mostrar': noticia_mostrar,
                'url_img': url_img,
