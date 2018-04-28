@@ -54,6 +54,9 @@ h6{
     .texto{
         width: 100%;
     }
+        .imagem-noticia img{
+	    width: 100%;
+    }
 }
 
 #centralizador{

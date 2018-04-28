@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5c4036a3-54ed-420d-9b5f-e042f3ecf873" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/core/static/css/noticia.css" afterPath="$PROJECT_DIR$/core/static/css/noticia.css" />
-      <change beforePath="$PROJECT_DIR$/core/templates/index.html" afterPath="$PROJECT_DIR$/core/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,8 +86,8 @@
       <file leaf-file-name="noticia.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/static/css/noticia.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+            <state relative-caret-position="360">
+              <caret line="57" column="17" lean-forward="false" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -696,8 +695,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/static/css/noticia.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+        <state relative-caret-position="360">
+          <caret line="57" column="17" lean-forward="false" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
           <folding />
         </state>
       </provider>
