@@ -95,9 +95,11 @@
 			</blockquote>
 		</div>
 
-		<h3 style="margin-bottom:1rem;">Ultimas notícias:</h3>
-		{% for noticia in ultimas_noticias %}
+		
+
 		<div class="lista-noticias">
+			<center><a href="/ultimas"><h3 style="margin-bottom:1rem;">Ultimas notícias:</h3></a></center>
+			{% for noticia in ultimas_noticias %}
 			<div class="noticia-lista">
 				<div class="direita-lista" {% if noticia.foto1 %} style="height:90%;float: right;width: 55%;" {% endif %}>
 					<div class="categoria-lista"><a href="/{{noticia.categoria}}"><h3>{{noticia.categoria}}</h3></a></div>
@@ -110,10 +112,12 @@
 				</div>
 				{% endif %}
 			</div>
-
+			{% endfor %}
+			<center><a href="/ultimas">Ver mais</a></center>
 		</div>
 
-	{% endfor %}
+
+
 </div>
 
 {% endblock %}

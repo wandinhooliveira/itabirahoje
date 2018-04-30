@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5c4036a3-54ed-420d-9b5f-e042f3ecf873" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/core/static/css/noticia.css" afterPath="$PROJECT_DIR$/core/static/css/noticia.css" />
+      <change beforePath="$PROJECT_DIR$/core/templates/index.html" afterPath="$PROJECT_DIR$/core/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,15 +60,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="80" column="14" lean-forward="false" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
+            <state relative-caret-position="130">
+              <caret line="97" column="8" lean-forward="false" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
               <folding>
                 <element signature="n#style#0;n#script#0;n#div#3;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#4;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#a#0;n#center#0;n#div#3;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -86,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="noticia.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="noticia.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/static/css/noticia.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+            <state relative-caret-position="105">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -153,10 +154,10 @@
         <option value="$PROJECT_DIR$/core/views.py" />
         <option value="$PROJECT_DIR$/core/templates/base.html" />
         <option value="$PROJECT_DIR$/core/static/css/corpo.css" />
-        <option value="$PROJECT_DIR$/core/templates/index.html" />
         <option value="$PROJECT_DIR$/core/models.py" />
         <option value="$PROJECT_DIR$/core/templates/noticia.html" />
         <option value="$PROJECT_DIR$/core/static/css/noticia.css" />
+        <option value="$PROJECT_DIR$/core/templates/index.html" />
       </list>
     </option>
   </component>
@@ -381,7 +382,7 @@
           <folding>
             <element signature="n#style#0;n#script#0;n#div#3;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#a#0;n#center#0;n#div#3;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
           </folding>
         </state>
@@ -460,7 +461,7 @@
           <folding>
             <element signature="n#style#0;n#script#0;n#div#3;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#a#0;n#center#0;n#div#3;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
           </folding>
         </state>
@@ -575,7 +576,7 @@
           <folding>
             <element signature="n#style#0;n#script#0;n#div#3;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#a#0;n#center#0;n#div#3;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
           </folding>
         </state>
@@ -696,24 +697,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/core/static/css/noticia.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="80" column="14" lean-forward="false" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#script#0;n#div#3;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/static/css/noticia.css">
+    <entry file="file://$PROJECT_DIR$/core/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="130">
+          <caret line="97" column="8" lean-forward="false" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#script#0;n#div#3;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#a#0;n#center#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
