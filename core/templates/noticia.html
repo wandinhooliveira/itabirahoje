@@ -46,7 +46,9 @@
 			</div>
 
                 <div class="texto">
+                    {% autoescape off %}
                 <h6>{{noticia.paragrafo1|linebreaksbr }}</h6>
+                    {% endautoescape %}
             </div>
             <div class="imagem-noticia">
                 {% if noticia.foto2 %}
@@ -54,7 +56,9 @@
                 {% endif %}
             </div>
             <div class="texto">
+                {% autoescape off %}
                 <h6>{{noticia.paragrafo2|linebreaksbr }}</h6>
+                {% endautoescape %}
             </div>
 
 
