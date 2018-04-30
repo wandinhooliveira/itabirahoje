@@ -47,7 +47,7 @@
 
                 <div class="texto">
                     {% autoescape off %}
-                <h6>{{noticia.paragrafo1|linebreaksbr }}</h6>
+                {{noticia.paragrafo1|linebreaksbr }}
                     {% endautoescape %}
             </div>
             <div class="imagem-noticia">
@@ -57,7 +57,7 @@
             </div>
             <div class="texto">
                 {% autoescape off %}
-                <h6>{{noticia.paragrafo2|linebreaksbr }}</h6>
+                {{noticia.paragrafo2|linebreaksbr }}
                 {% endautoescape %}
             </div>
 
