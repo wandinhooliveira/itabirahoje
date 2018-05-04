@@ -53,6 +53,9 @@ h6{
 #anuncie{
     width: 500px;
 }
+lista-noticias{
+    margin-left:5%;
+}
 @media (max-width: 1100px)
 {
     .texto{
@@ -63,6 +66,9 @@ h6{
     }
     #anuncie{
     width: 100%;
+    }
+    .lista-noticias{
+	margin-left: auto;
     }
 }
 
